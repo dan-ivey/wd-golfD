@@ -22,14 +22,14 @@ app.Animation = (function () {
 
 	// --------------------------------------------------------------------------------------
 	// Starts the animation
-	function start() {
-		
-		tl.to(img2, 1.5, {opacity:1, ease:Sine.easeInOut})
-		.to(logo, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
-		.to(txt1, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
-		.to(txt2, 1.5, {opacity:1, ease:Sine.easeInOut}, "+=1");
-		
-	}
+		function start() {
+
+		tl.to(img2, 1.5, {opacity:1, ease:Sine.easeInOut}, "+=.5")
+	        .to(logo, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
+	        .to(txt1, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
+	        .to(txt2, 1.5, {opacity:1, ease:Sine.easeInOut}, "+=1");
+
+		}
 
 	// --------------------------------------------------------------------------------------
 	// Stops the animation
