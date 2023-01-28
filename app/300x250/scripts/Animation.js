@@ -5,6 +5,7 @@ app.Animation = (function () {
 
 	var banner = document.getElementById('banner');
 	var img2 = document.getElementById('img2');
+	var cta = document.getElementById('cta');
 	var logo = document.getElementById('logo');
 	var txt2 = document.getElementById('txt2');
 	var txt1 = document.getElementById('txt1');
@@ -25,6 +26,7 @@ app.Animation = (function () {
 		function start() {
 
 		tl.to(img2, 1.5, {opacity:1, ease:Sine.easeInOut}, "+=.5")
+	        .to(cta, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
 	        .to(logo, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
 	        .to(txt1, 1.5, {opacity:1, ease:Sine.easeInOut}, "-=1.5")
 	        .to(txt2, 1.5, {opacity:1, ease:Sine.easeInOut}, "+=1");
